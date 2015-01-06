@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+ <tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/view/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />
+	</definition>
+	
+	<definition name="based.definition" template="/WEB-INF/view/ltemplate.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/lheader.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/lfooter.jsp" />
+	</definition>
+	
+	
+	<definition name="basex.definition" template="/WEB-INF/view/etemplate.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/header.jsp" />
+		<put-attribute name="firstmain" value="/WEB-INF/view/firstmain.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />
+	</definition>
+	
+	<definition name="login" extends="based.definition">
+		<put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+	</definition>
+	
+	<definition name="home" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/view/home.jsp" />
+	</definition>
+	
+	<definition name="allexams" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/view/allexams.jsp" />
+	</definition>
+	
+	<definition name="instructions" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/view/instructions.jsp" />
+	</definition>
+	
+	<definition name="aptitude" extends="basex.definition">
+		<put-attribute name="body" value="/WEB-INF/view/aptitude.jsp" />
+	</definition>
+	
+	<definition name="reasoning" extends="basex.definition">
+		<put-attribute name="body" value="/WEB-INF/view/reasoning.jsp" />
+	</definition>
+	
+	<definition name="english" extends="basex.definition">
+		<put-attribute name="body" value="/WEB-INF/view/english.jsp" />
+	</definition>
+	
+	<definition name="gk" extends="basex.definition">
+		<put-attribute name="body" value="/WEB-INF/view/gk.jsp" />
+	</definition>
+	
+	
+	
+	
+ </tiles-definitions>      
